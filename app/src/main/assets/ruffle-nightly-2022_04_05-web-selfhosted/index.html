@@ -1,0 +1,12 @@
+<script>
+    window.RufflePlayer = window.RufflePlayer || {};
+
+    window.addEventListener("DOMContentLoaded", () => {
+        let ruffle = window.RufflePlayer.newest();
+        let player = ruffle.createPlayer();
+        let container = document.getElementsByTagName("body")[0];
+        container.appendChild(player);
+        player.load("Tests/BowMan2.swf");
+    });
+</script>
+<script src="ruffle.js"></script>
